@@ -30,11 +30,19 @@ class main {
         // l.add(new ellipse(1500,1500,400,300));
         // l.forEach(a->{a.draw();});
 
-        // インターフェース
-        catImpl c = new catImpl();
-        dogImpl d = new dogImpl();
-        System.out.println(c.shout());
-        System.out.println(d.shout());
+        // // インターフェース（その１）
+        // catImpl c = new catImpl();
+        // dogImpl d = new dogImpl();
+        // System.out.println(c.shout());
+        // System.out.println(d.shout());
+
+        // インターフェース（その２）
+        Cheetah c = new Cheetah();
+        System.out.printf("%s's Runnable = %s and Flyable = %s\r\n",c.Name, c.Runnable(), c.Flyable());
+        IRun r = new Cheetah();
+        System.out.printf("In case of IRun r = new Cheetah(), Runnable = %s\r\n",r.Runnable());
+        IFly f = new Cheetah();
+        System.out.printf("In case of IFly f = new Cheetah(), Flyable = %s\r\n",f.Flyable());
 
 	}
 }
