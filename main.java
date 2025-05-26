@@ -17,9 +17,12 @@ class main {
         // math.print();
 
         // 継承
+        // // animal a = new animal();
+        // // dog d = new dog();
+        // // cat c = new cat();
         // animal a = new animal();
-        // dog d = new dog();
-        // cat c = new cat();
+        // animal d = new dog();
+        // animal c = new cat();
         // a.shout();
         // d.shout();
         // c.shout();
@@ -37,12 +40,12 @@ class main {
         // System.out.println(d.shout());
 
         // インターフェース（その２）
-        Cheetah c = new Cheetah();
-        System.out.printf("%s's Runnable = %s and Flyable = %s\r\n",c.Name, c.Runnable(), c.Flyable());
-        IRun r = new Cheetah();
-        System.out.printf("In case of IRun r = new Cheetah(), Runnable = %s\r\n",r.Runnable());
-        IFly f = new Cheetah();
-        System.out.printf("In case of IFly f = new Cheetah(), Flyable = %s\r\n",f.Flyable());
+        // Cheetah c = new Cheetah();
+        // System.out.printf("%s's Runnable = %s and Flyable = %s\r\n",c.Name, c.Runnable(), c.Flyable());
+        // IRun r = new Cheetah();
+        // System.out.printf("In case of IRun r = new Cheetah(), Runnable = %s\r\n",r.Runnable());
+        // IFly f = new Cheetah();
+        // System.out.printf("In case of IFly f = new Cheetah(), Flyable = %s\r\n",f.Flyable());
 
 	}
 }

@@ -310,6 +310,57 @@ publicなどの修飾子と、関数定義扱えるようになりました。
         わんわん！
         にゃー！
         ```
+
+    - ちょっとオブジェクトの作り方を変えてみます
+        ```
+        class main {
+            public static void main(String[] args) {
+        //         // クラスとオブジェクト
+        //         add b = new add();
+        //         Integer c = 0;
+        // //        c = b.add(10,20);
+        //         System.out.printf("c = %d\r\n",c);
+        //         b.print();
+                
+                // スタティッククラス
+                // System.out.printf("math.add(100,200) = %d\r\n",math.add(100,200));
+                // math.print();
+                // System.out.printf("math.sub(1000,2000) = %d\r\n",math.sub(1000,2000));
+                // math.print();
+
+                // 継承
+                // animal a = new animal();
+                // dog d = new dog();
+                // cat c = new cat();
+                animal a = new animal();
+                animal d = new dog();
+                animal c = new cat();
+
+                cat c = new cat();
+                a.shout();
+                d.shout();
+                c.shout();
+            }
+        }
+        ```
+    - コンパイルします。
+        ```
+        javac main.java animal.java dog.java cat.java
+        ```
+    - 実行します。
+        ```
+        java main
+        ```
+    - 実行結果は以下のようになるでしょう。
+        ```
+        あにまーる！
+        わんわん！
+        にゃー！
+        ```
+        なんと！結果が変わりません。つまり、animal型としても定義できるということです。
+        複数のクラスを共通して扱えるということです
+        つまり、ポリモーフィズムです。
+
     - 継承のまとめ
         - animalクラスを継承してdogクラスとcatクラスを作りました。その際、@Overrideによって、shoutメソッドをオーバーライド（上書き）しています。
         - 継承ではベースクラスに基本的な処理を書き、それを継承して別の処理を加えることができます。また、ベースクラスのメソッドを上書きも出来ます。
@@ -382,9 +433,12 @@ publicなどの修飾子と、関数定義扱えるようになりました。
                 // math.print();
 
                 // 継承
+                // // animal a = new animal();
+                // // dog d = new dog();
+                // // cat c = new cat();
                 // animal a = new animal();
-                // dog d = new dog();
-                // cat c = new cat();
+                // animal d = new dog();
+                // animal c = new cat();
                 // a.shout();
                 // d.shout();
                 // c.shout();
@@ -468,9 +522,12 @@ publicなどの修飾子と、関数定義扱えるようになりました。
                 // math.print();
 
                 // 継承
+                // // animal a = new animal();
+                // // dog d = new dog();
+                // // cat c = new cat();
                 // animal a = new animal();
-                // dog d = new dog();
-                // cat c = new cat();
+                // animal d = new dog();
+                // animal c = new cat();
                 // a.shout();
                 // d.shout();
                 // c.shout();
@@ -586,9 +643,12 @@ publicなどの修飾子と、関数定義扱えるようになりました。
                 // math.print();
 
                 // 継承
+                // // animal a = new animal();
+                // // dog d = new dog();
+                // // cat c = new cat();
                 // animal a = new animal();
-                // dog d = new dog();
-                // cat c = new cat();
+                // animal d = new dog();
+                // animal c = new cat();
                 // a.shout();
                 // d.shout();
                 // c.shout();
